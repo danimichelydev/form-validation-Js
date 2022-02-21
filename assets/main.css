@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: 'Redressed', cursive;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+main {
+    width: 380px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, -21px 5px 18px -24px rgba(0,0,0,0); 
+    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, -21px 5px 18px -24px rgba(0,0,0,0);
+
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 3px 0px 33px -10px rgba(255,255,255,0.85); 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 3px 0px 33px -10px rgba(255,255,255,0.85);
+
+}
+main h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+fieldset {
+    padding: 10px;
+    margin-top: 40px;
+    border: 2px solid #555;
+    border-radius: 5px;
+}
+
+legend {
+    padding: 5px;
+}
+
+form label {
+    margin-left: 10px;
+}
+
+form input{
+    display: block;
+    border-radius: 5px;
+    width: 280px;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    color: #000;
+    font-size: 18px;
+    border: 2px solid transparent;
+}
+
+form button {
+    background-color: rgb(255, 136, 0);
+    width: 170px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;   
+    
+    
+    
+}
+
+form button:hover {
+    background-color: rgb(201, 83, 5);
+}
+
+#error {
+    display: block;
+    width: 220px;
+    height: 15px;
+    margin-top: -12px;
+    background-color: rgb(248, 24, 24);
+    font-size: 12px;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+}
+
+.invalid {
+    border: 2px solid rgb(248, 24, 24);
+}
+
+
+
+
