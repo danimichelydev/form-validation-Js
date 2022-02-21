@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #FFF;
-    font-family: 'Redressed', cursive;
+    font-family: 'Orbitron', sans-serif;
 }
 
 body {
@@ -15,23 +16,21 @@ body {
 }
 
 main {
-    width: 380px;
+    width: 350px;
     height: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, -21px 5px 18px -24px rgba(0,0,0,0); 
-    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, -21px 5px 18px -24px rgba(0,0,0,0);
-
+    border-radius: 5px;    
     -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 3px 0px 33px -10px rgba(255,255,255,0.85); 
-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 3px 0px 33px -10px rgba(255,255,255,0.85);
-
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 3px 0px 33px -10px rgba(255,255,255,0.85);
 }
+
 main h1 {
     text-align: center;
+    font-size: 22px;
 }
 
 form {
@@ -43,27 +42,29 @@ form {
 
 fieldset {
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
     border: 2px solid #555;
     border-radius: 5px;
 }
 
 legend {
     padding: 5px;
+    font-size: 14px;
 }
 
 form label {
     margin-left: 10px;
+    font-size: 12px;
 }
 
 form input{
     display: block;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 280px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     padding: 5px 15px;
     color: #000;
-    font-size: 18px;
+    font-size: 14px;
     border: 2px solid transparent;
 }
 
@@ -73,14 +74,12 @@ form button {
     height: 40px;
     margin-top: 20px;
     border: none;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-    border-radius: 5px;   
-    
-    
-    
+    border-radius: 5px;  
+    transition: .5s all ease-in-out; 
 }
 
 form button:hover {
@@ -89,11 +88,13 @@ form button:hover {
 
 #error {
     display: block;
-    width: 220px;
+    width: auto;
     height: 15px;
-    margin-top: -12px;
+    margin-top: -24px;
+    border-radius: 5px;
+    padding: 0px 5px;
     background-color: rgb(248, 24, 24);
-    font-size: 12px;
+    font-size: 9px;
     text-align: center;
     opacity: 0;
     position: absolute;
@@ -102,7 +103,3 @@ form button:hover {
 .invalid {
     border: 2px solid rgb(248, 24, 24);
 }
-
-
-
-
